@@ -129,14 +129,7 @@ end
 
 # Write code here
 
-def players
- players_game = game_hash[:home][:players].merge(game_hash[:away][:players])
- binding.pry
-end
 
-def num_points_scored(player_name)
-  players[player_name][:points]
-end
 
 def shoe_size(player_name)
   players[player_name][:shoe]
