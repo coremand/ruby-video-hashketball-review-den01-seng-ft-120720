@@ -129,7 +129,10 @@ end
 
 # Write code here
 
-
+def num_points_scored(my_name)
+     game_hash.each{|key,value| value[:players].each{|key_2| return key_2[:points] if key_2[:player_name] == my_name}
+    }
+end
 
 def shoe_size(player_name)
   players[player_name][:shoe]
